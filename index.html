@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filling table from form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <td>
+        <!-- html table -->
+        <table class="list" id="storeList">
+            <div class="header1">
+                <h3>INTERN</h3>
+                <button id="employ-btn">Add Employee</button>
+            </div>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>NAME</th>
+                    <th>DEPARTMENT</th>
+                    <th>SALARY</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </td>
+
+                <!-- html form -->
+                <form class="formal" autocomplete="off" >
+                    <h2>Add Employee</h2>
+
+                    <button id="cancel-btn">X</button>
+
+                    <div>
+                        <label for="salary">S/N:</label>
+                        <input type="number" id="number" placeholder="S/N">
+                    </div>
+                    <div>
+                        <label for="firstname">FIRSTNAME:</label>
+                        <input type="text" id="firstName" placeholder="Firstname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">LASTNAME:</label>
+                        <input type="text" id="lastName" placeholder="Lastname" required>
+                    </div>
+                    <div>
+                        <label for="department">DEPARTMENT:</label>
+                        <input type="text" id="department" class="depart" placeholder="Department" required>
+                    </div>
+                    <div>
+                        <label for="salary">SALARY:</label>
+                        <input type="number" id="salary" placeholder="Salary" required>
+                    </div>
+                    <div class="form_action--buttons">
+                        <button class="button" id="save" onclick="onFormSubmit()">Save</button>
+                        <button class="button" id="reset" onclick="resetForm()">Reset</button>
+                        <!-- <input type="submit" value="SAVE" oncl="onFormSubmit()"> -->
+                        <!-- <input type="submit" value="RESET" onclick="resetForm()"> -->
+                    </div>
+                </form>
+            </td>
+        </tr>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

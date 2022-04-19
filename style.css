@@ -1,0 +1,158 @@
+body {
+    padding: 0;
+    margin: 2em;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(241, 241, 241);
+}
+
+table.list {
+    text-align: center;
+    width: 100%;
+}
+
+td {
+    border: 1px solid rgb(177, 174, 174);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thead> tr{
+    background-color: rgb(177, 174, 174);
+}
+
+h2{
+    margin-left: 8em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.formal {
+    width: 50%;
+    margin: 5em auto 0 auto;
+    background-color: rgb(248, 250, 252);
+    padding: 2em;
+    border-radius: 1em;
+    border: 1px solid rgb(228, 225, 225);
+    display: none;
+    position: relative;
+}
+
+#cancel-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+/* .formal div {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+} */
+
+label {
+    margin-right: 3em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 40%;
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: rgb(148, 146, 146);
+    color: white;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 40%;
+    margin-right: em;
+}
+
+#department {
+    width: 40% ;
+    margin-left: -1.5em;
+}
+
+input[type="submit"] {
+    background: rgb(211, 210, 210);
+    padding: 10px 30px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border-radius: 30px;
+    border: none;
+    /* font-size: 1rem; */
+    cursor: pointer;
+    outline: none;
+    margin-left: 10em;
+}
+
+#firstName {
+    margin-left: -.5em;
+}
+
+#salary {
+    margin-left: 1.9em;
+}
+
+#number {
+    margin-left: 5em;
+    width: 40%;
+}
+
+input[type="submit"]:hover {
+    background: gray;
+    color: white;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    /* margin-top: 2.5em; */
+    background: gray;
+    text-align: center;
+    padding: .5em 1.5em;
+    border-radius: 3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button {
+    background: rgb(211, 210, 210);
+    padding: 10px 30px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border-radius: 30px;
+    border: none;
+    /* font-size: 1rem; */
+    cursor: pointer;
+    outline: none;
+    margin-left: 11em;
+}
+
+.button:hover {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#reset {
+    margin-left: 8em;
+}
